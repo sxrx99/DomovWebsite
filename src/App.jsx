@@ -60,7 +60,7 @@ function App() {
               <li style={{ fontSize: '18px' }} onClick={() => scrollToSection('Team') }><a>Domov team</a></li>
               <li style={{ fontSize: '18px' }} onClick={() => scrollToSection('download')}><a>Download</a></li>
               <li style={{ fontSize: '18px' }} onClick={() => scrollToSection('help')}><a>Help</a></li>
-              <li style={{ fontSize: '18px' }} onClick={() => scrollToSection('FAQ')}><a>FAQ</a></li>
+              {/* <li style={{ fontSize: '18px' }} onClick={() => scrollToSection('FAQ')}><a>FAQ</a></li> */}
               <li style={{ fontSize: '18px' }} onClick={() => scrollToSection('contact')}><a>Contact us</a></li>
             </ul>
           </div>
