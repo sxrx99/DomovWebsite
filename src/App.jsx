@@ -39,6 +39,14 @@ function App() {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
+  const handleButtonClickInstallationGuide = () => {
+    window.open('/PRJP09_EQ02_SEHAD_MAHFOUDI_INSTALLATION_GUIDE.pdf', '_blank');
+  };
+  const handleButtonClickUserGuide= () => {
+    window.open('/PRJP09_EQ02_SEHAD_MAHFOUDI_USER_GUIDE.pdf', '_blank');
+  };
+
     
  
 
@@ -137,7 +145,7 @@ function App() {
           <p className='text text-center mt-3 ' >Transform your home with Domov</p>
           <p className='text2 text-center mx-5'>download now for effortless control and convenience at your fingertips</p>
           <div className="btn d-flex justify-content-center mt-5">
-          <button className='col-lg-3 border p-2 px-4'style={{ fontSize: '30px',borderRadius: '40px' }}>download app</button>
+          <button className='col-lg-3 border p-2 px-4'style={{ fontSize: '30px',borderRadius: '40px' }} onClick={() => window.open('https://placeholder-for-app-link.com', '_blank')}>download app</button>
           </div>
 
         </div>
@@ -161,8 +169,8 @@ function App() {
 
           
           <div className="section2 row d-flex justify-content-between">
-           <button className='col-lg-3 border p-2 px-4 ' style={{ borderRadius: '40px'  }}>User guide</button>
-           <button className='col-lg-3 border p-2 px-4 ' style={{  borderRadius: '40px'  }}>Installation manual </button>
+           <button className='col-lg-3 border p-2 px-4 ' style={{ borderRadius: '40px'  }} onClick={handleButtonClickUserGuide}> User guide</button>
+           <button className='col-lg-3 border p-2 px-4 ' style={{  borderRadius: '40px'  }}  onClick={handleButtonClickInstallationGuide}>Installation manual </button>
 
            </div>
         </div>
