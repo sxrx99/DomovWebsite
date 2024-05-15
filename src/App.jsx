@@ -48,7 +48,18 @@ function App() {
   };
 
     
- 
+  const handleDownloadApk = () => {
+   
+    const apkUrl = '/DomovApp.apk';
+    
+    
+    const link = document.createElement('a');
+    link.href = apkUrl;
+    link.download = 'Domov.apk'; 
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <>
@@ -145,7 +156,7 @@ function App() {
           <p className='text text-center mt-3 ' >Transform your home with Domov</p>
           <p className='text2 text-center mx-5'>download now for effortless control and convenience at your fingertips</p>
           <div className="btn d-flex justify-content-center mt-5">
-          <button className='col-lg-3 border p-2 px-4'style={{ fontSize: '30px',borderRadius: '40px' }} onClick={() => window.open('https://placeholder-for-app-link.com', '_blank')}>download app</button>
+          <button className='col-lg-3 border p-2 px-4'style={{ fontSize: '30px',borderRadius: '40px' }} onClick={handleDownloadApk}>download app</button>
           </div>
 
         </div>
