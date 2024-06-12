@@ -50,7 +50,7 @@ function App() {
     
   const handleDownloadApk = () => {
    
-    const apkUrl = '/DomovApp.apk';
+    const apkUrl = '/application-c77734b0-e422-44a3-898d-57b6de1ac795.apk';
     
     
     const link = document.createElement('a');
